@@ -9,7 +9,7 @@ This template is a subscription level template that creates an Azure environment
 
 # Usage:
 ## Alternative 1
-You can use the the button [Deploy to Azure] above for the automatic deployment of the necessary Azure Resources. This script assumes that you have a valid Azure subscription and that your are logged in. 
+You can use the button [Deploy to Azure] above for the automatic deployment of the necessary Azure Resources. This script assumes that you have a valid Azure subscription and that your are logged in. 
 
 ## Alternative 2
 If you are familiar with PowerShell, you can use the PowerShell Script enclosed.
