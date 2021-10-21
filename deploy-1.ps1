@@ -6,7 +6,7 @@ $adminPassword = Read-Host -Prompt "Enter the administrator password for the VM"
 New-AzResourceGroup -Name $resourceGroupName -Location "$location"
 New-AzResourceGroupDeployment `
     -ResourceGroupName $resourceGroupName `
-    -TemplateFile "C:\Users\a.mdobes\Documents\APARAVI_ARM\azuredeploy.json" `
+    -TemplateUri "https://github.com/aparaviemea/Installation/blob/main/azuredeploy.json" `
     -adminUsername $adminUsername `
     -adminPassword $adminPassword `
     -dnsLabelPrefix $dnsLabelPrefix
