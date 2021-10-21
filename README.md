@@ -11,6 +11,6 @@ This template is a subscription level template that creates an Azure Windows Ser
 You can use the button [Deploy to Azure] above for the automatic deployment of the necessary Azure Resources. This script assumes that you have a valid Azure subscription and that your are logged in. 
 
 ## Alternative 2
-If you are familiar with PowerShell, you can use the PowerShell Script enclosed.
+If you are familiar with PowerShell, you can use the PowerShell Script enclosed which will setup the entire Azure envinroment which is necessary for the Aparavi installation.
 If you have any questions, contact martin.dobes@aparavi.com 
 
