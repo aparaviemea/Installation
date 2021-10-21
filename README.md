@@ -1,4 +1,4 @@
-<img width=180 src=https://github.com/aparaviemea/Installation/blob/main/images/Aparavi_logo_color_gray.jpg>
+<img width=190 src=https://github.com/aparaviemea/Installation/blob/main/images/Aparavi_logo_color_gray.jpg>
 
 # Aparavi EMEA Installation Templates 
 
