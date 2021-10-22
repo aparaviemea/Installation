@@ -45,8 +45,20 @@ The Aggregator and Aggregator-Collector require a database to store file metadat
 
 - MySQL 8.0.x
 
+### Data Sources 
+Aparavi software can access files systems on which the Aggregator-Collector or Collector is installed. In addition, Aparavi can access files using the SMB file share protocol. Over time the supported source types will grow to include other options.  
 
-### ToDo List:
+### Supported data sources include the following. 
+
+- File Systems3
+- Windows file systems 
+- Linux file systems 
+- SMB file share protocols – 2.x and 3.x 
+
+To access Windows file shares from Linux servers, Samba client libraries (libsmbclient) will be automatically installed by Aparavi on the Linux server. To access Linux files shares from Windows servers, Samba server libraries must be installed and configured on the linux server. 
+
+
+# ToDo List:
 
 - **ARM Template with 2 VMs based on Windows Server 2019** for Aparavi Aggregator and Collector
 
