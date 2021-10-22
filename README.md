@@ -18,10 +18,10 @@ If you have any questions, contact martin.dobes@aparavi.com
 
 ### ToDo List:
 
-ARM Template with 2 VMs bases on Windows Server 2019 for Aparavi Aggregator and Collector,
+- **ARM Template** with 2 VMs bases on Windows Server 2019 for Aparavi Aggregator and Collector
 
-ARM Template with 1 VM based in Linux for one Aparavi Agent,
+- ARM Template with 1 VM based in Linux for one Aparavi Agent
 
-ARM Template with 2 VMs based on Linux for Aparavi Aggregator and Collector,
+- ARM Template with 2 VMs based on Linux for Aparavi Aggregator and Collector
 
 
