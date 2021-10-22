@@ -29,16 +29,14 @@ The Aparavi software is supported on the following operating systems.
 - Windows Server 2019  
 - Windows Server 2016  
 - Windows Server 2012 R2  
-- Windows 101
-1 Supported for Collector installation. Not as an Aggregator 
-
+- Windows 10 (Supported for Collector installation. Not as an Aggregator)
 - Linux OS (x64 only)2
 - Ubuntu 18.04 and 20.04 
 - Debian 9.x and 10 
 - Red Hat (RHEL) 8.x 
 - CentOS 8.x 
 - Suse Enterprise 15 
-- 2 Linux distributions must have libc 2.23 or greater installed 
+- Linux distributions must have libc 2.23 or greater installed 
 
 ### Database Support 
 The Aggregator and Aggregator-Collector require a database to store file metadata. The database may be installed on the same server as an Aggregator or on a separate server accessible by the Aggregator. Multiple Aggregators may access the same database. Supported database types include: 
