@@ -1,4 +1,4 @@
-<img width=190 src=https://github.com/aparaviemea/Installation/blob/main/images/Aparavi_logo_color_gray.jpg>
+<img width=220 src=https://github.com/aparaviemea/Installation/blob/main/images/Aparavi_logo_color_gray.jpg>
 
 # Aparavi EMEA Installation Templates 
 
@@ -54,6 +54,10 @@ Aparavi software can access files systems on which the Aggregator-Collector or C
 - SMB file share protocols – 2.x and 3.x 
 
 To access Windows file shares from Linux servers, Samba client libraries (libsmbclient) will be automatically installed by Aparavi on the Linux server. To access Linux files shares from Windows servers, Samba server libraries must be installed and configured on the linux server. 
+
+### Documentation
+
+The documentation files are in the section `Documentation.
 
 
 # ToDo List:
