@@ -14,6 +14,8 @@ You can use the button [Deploy to Azure] above for the automatic deployment of t
 If you are familiar with PowerShell, you can use the PowerShell Script enclosed which will setup the entire Azure envinroment which is necessary for the Aparavi installation.
 If you have any questions, contact martin.dobes@aparavi.com 
 
+<img src=https://github.com/aparaviemea/Installation/blob/main/images/overview.png>
+
 ### ToDo List:
 
 ARM Template with 2 VMs bases on Windows Server 2019 for Aparavi Aggregator and Collector,
