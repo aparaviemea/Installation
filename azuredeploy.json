@@ -74,7 +74,7 @@
         "type": "string",
         "defaultValue": "Standard_D8s_v3",
         "allowedValues": [
-            "Standard_D2_v2",
+            "Standard_D8s_v3",
             "Standard_D2_v3",
             "Standard_D2s_v3",
             "Standard_D3",
@@ -88,8 +88,7 @@
             "Standard_D5_v2",
             "Standard_D64_v3",
             "Standard_D64s_v3",
-            "Standard_D8_v3",
-            "Standard_D8s_v3"
+            "Standard_D8_v3"
         ],
         "metadata": {
           "description": "Size of the virtual machine."
