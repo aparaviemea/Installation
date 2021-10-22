@@ -22,7 +22,7 @@ Folowing image explains the difference between the installation of an Agent and 
 
 ### ToDo List:
 
-- **ARM Template with 2 VMs bases on Windows Server 2019** for Aparavi Aggregator and Collector
+- **ARM Template with 2 VMs based on Windows Server 2019** for Aparavi Aggregator and Collector
 
 - **ARM Template with 1 VM based in Linux** for one Aparavi Agent
 
