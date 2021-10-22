@@ -57,8 +57,8 @@ To access Windows file shares from Linux servers, Samba client libraries (libsmb
 
 ### Documentation
 
-The documentation files are in the section `Documentation.
-`Tags: Blueprints, blueprint definition, artifacts, policy assignment, blueprint-level parameters`
+The documentation files are in the section `Documentation`.
+
 
 
 # ToDo List:
