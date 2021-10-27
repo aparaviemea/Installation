@@ -17,7 +17,7 @@
       },
       "dnsLabelPrefix": {
         "type": "string",
-        "defaultValue": "[format('{0}dns', resourceGroup().name)]",
+        "defaultValue": "[format('{0}dns', toLower (resourceGroup().name))]",
         "metadata": {
           "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
         }
@@ -104,7 +104,7 @@
       },
       "vmName": {
         "type": "string",
-        "defaultValue": "[format('{0}-VM', resourceGroup().name)]",
+        "defaultValue": "[format('{0}-VM', substring (resourceGroup().name, 0, 5))]",
         "metadata": {
           "description": "Name of the virtual machine."
         }
