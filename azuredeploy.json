@@ -17,7 +17,7 @@
       },
       "dnsLabelPrefix": {
         "type": "string",
-        "defaultValue": "[format('{0}dns', toLower (resourceGroup().name))]",
+        "defaultValue": "[toLower(format('{0}-{1}', parameters('vmName'), uniqueString(resourceGroup().id, parameters('vmName'))))]",
         "metadata": {
           "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
         }
@@ -113,11 +113,11 @@
     "functions": [],
     "variables": {
       "storageAccountName": "[format('storage{0}', uniqueString(resourceGroup().id))]",
-      "nicName": "VMNic",
+      "nicName": "[format('{0}-VMNic', substring (resourceGroup().name, 0, 5))]",
       "addressPrefix": "10.0.0.0/16",
       "subnetName": "Subnet",
       "subnetPrefix": "10.0.0.0/24",
-      "virtualNetworkName": "VNET",
+      "virtualNetworkName": "[format('{0}-VNET', substring (resourceGroup().name, 0, 5))]",
       "networkSecurityGroupName": "[format('{0}-NSG', substring (resourceGroup().name, 0, 5))]"
     },
     "resources": [
