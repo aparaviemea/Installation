@@ -206,7 +206,23 @@
                         "sourceAddressPrefixes": [],
                         "destinationAddressPrefixes": []
                     }
-                }
+                },
+                {
+                        "name": "Port_9545",
+                        "properties": {
+                            "protocol": "*",
+                            "sourcePortRange": "*",
+                            "destinationPortRange": "9545",
+                            "sourceAddressPrefix": "*",
+                            "destinationAddressPrefix": "*",
+                            "access": "Allow",
+                            "priority": 1010,
+                            "direction": "Inbound",
+                            "sourcePortRanges": [],
+                            "destinationPortRanges": [],
+                            "sourceAddressPrefixes": [],
+                            "destinationAddressPrefixes": []
+                       }
           ]
         }
       },
