@@ -72,9 +72,9 @@
       },
       "vmSize": {
         "type": "string",
-        "defaultValue": "Standard_D2_v3",
+        "defaultValue": "Standard_D8s_v3",
         "allowedValues": [
-            "Standard_D2_v2",
+            "Standard_D8s_v3",
             "Standard_D2_v3",
             "Standard_D2s_v3",
             "Standard_D3",
@@ -88,8 +88,8 @@
             "Standard_D5_v2",
             "Standard_D64_v3",
             "Standard_D64s_v3",
-            "Standard_D8_v3",
-            "Standard_D8s_v3"
+            "Standard_D8_v3"
+            
         ],
         "metadata": {
           "description": "Size of the virtual machine."
@@ -118,7 +118,7 @@
       "subnetName": "Subnet",
       "subnetPrefix": "10.0.0.0/24",
       "virtualNetworkName": "VNET",
-      "networkSecurityGroupName": "APARAVI-NSG"
+      "networkSecurityGroupName": "[format('{0}-NSG', substring (resourceGroup().name, 0, 5))]"
     },
     "resources": [
       {
@@ -207,7 +207,25 @@
                         "sourceAddressPrefixes": [],
                         "destinationAddressPrefixes": []
                     }
+                },
+                {
+                        "name": "Port_9545",
+                        "properties": {
+                            "protocol": "*",
+                            "sourcePortRange": "*",
+                            "destinationPortRange": "9545",
+                            "sourceAddressPrefix": "*",
+                            "destinationAddressPrefix": "*",
+                            "access": "Allow",
+                            "priority": 1010,
+                            "direction": "Inbound",
+                            "sourcePortRanges": [],
+                            "destinationPortRanges": [],
+                            "sourceAddressPrefixes": [],
+                            "destinationAddressPrefixes": []
+                        }
                 }
+                
           ]
         }
       },
