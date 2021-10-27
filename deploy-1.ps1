@@ -9,4 +9,4 @@ New-AzResourceGroupDeployment `
     -TemplateUri "https://github.com/aparaviemea/Installation/blob/main/azuredeploy.json" `
     -adminUsername $adminUsername `
     -adminPassword $adminPassword `
-    -dnsLabelPrefix $dnsLabelPrefix
+   
