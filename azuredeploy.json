@@ -113,12 +113,12 @@
     "functions": [],
     "variables": {
       "storageAccountName": "[format('storage{0}', uniqueString(resourceGroup().id))]",
-      "nicName": "[format('{0}-VMNic', substring (resourceGroup().name, 0, 5))]",
+      "nicName": "[if(lessOrEquals(length(resourceGroup().name), 5), 'Nic', format('{0}-Nic', substring (resourceGroup().name, 0, 5)))]",
       "addressPrefix": "10.0.0.0/16",
       "subnetName": "Subnet",
       "subnetPrefix": "10.0.0.0/24",
       "virtualNetworkName": "[format('{0}-VNET', substring (resourceGroup().name, 0, 5))]",
-      "networkSecurityGroupName": "[format('{0}-NSG', substring (resourceGroup().name, 0, 5))]"
+      "networkSecurityGroupName": "[if(lessOrEquals(length(resourceGroup().name), 5), 'NSG', format('{0}-NSG', substring (resourceGroup().name, 0, 5)))]"
     },
     "resources": [
       {
