@@ -104,7 +104,7 @@
       },
       "vmName": {
         "type": "string",
-        "defaultValue": "[if(lessOrEquals(length(resourceGroup().location), 5), 'WM', format('{0}-VM', substring (resourceGroup().name, 0, 5)))]",
+        "defaultValue": "[if(lessOrEquals(length(resourceGroup().name), 5), 'WM', format('{0}-VM', substring (resourceGroup().name, 0, 5)))]",
         "metadata": {
           "description": "Name of the virtual machine."
         }
