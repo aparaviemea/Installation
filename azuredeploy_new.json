@@ -113,7 +113,7 @@
     "functions": [],
     "variables": {
       "storageAccountName": "[format('storage{0}', uniqueString(resourceGroup().id))]",
-      "nicName": "[if(lessOrEquals(length(resourceGroup().name), 8), 'Nic', format('{0}-Nic', substring (resourceGroup().name, 0, 8)))]",
+      "nicName": "[if(lessOrEquals(length(resourceGroup().name), 8), format('{0}-Nic', substring (resourceGroup().name, 0, length(resourceGroup().name))), format('{0}-Nic', substring (resourceGroup().name, 0, 8)))]",
       "addressPrefix": "10.0.0.0/16",
       "subnetName": "Subnet",
       "subnetPrefix": "10.0.0.0/24",
