@@ -24,7 +24,7 @@
       },
       "publicIpName": {
         "type": "string",
-        "defaultValue": "PublicIP",
+        "defaultValue": "[if(lessOrEquals(length(resourceGroup().name), 8), format('{0}-PublicIP', substring (resourceGroup().name, 0, length(resourceGroup().name))), format('{0}-PublicIP', substring (resourceGroup().name, 0, 8)))]",
         "metadata": {
           "description": "Name for the Public IP used to access the Virtual Machine."
         }
@@ -104,7 +104,7 @@
       },
       "vmName": {
         "type": "string",
-        "defaultValue": "[format('{0}-VM', substring (resourceGroup().name, 0, 5))]",
+        "defaultValue": "[if(lessOrEquals(length(resourceGroup().name), 8), format('{0}-VM', substring (resourceGroup().name, 0, length(resourceGroup().name))), format('{0}-VM', substring (resourceGroup().name, 0, 8)))]",
         "metadata": {
           "description": "Name of the virtual machine."
         }
@@ -113,12 +113,12 @@
     "functions": [],
     "variables": {
       "storageAccountName": "[format('storage{0}', uniqueString(resourceGroup().id))]",
-      "nicName": "[ format('{0}-Nic', substring (resourceGroup().name, 0, 5))]",
+      "nicName": "[if(lessOrEquals(length(resourceGroup().name), 8), format('{0}-Nic', substring (resourceGroup().name, 0, length(resourceGroup().name))), format('{0}-Nic', substring (resourceGroup().name, 0, 8)))]",
       "addressPrefix": "10.0.0.0/16",
       "subnetName": "Subnet",
       "subnetPrefix": "10.0.0.0/24",
-      "virtualNetworkName": "[format('{0}-VNET', substring (resourceGroup().name, 0, 5))]",
-      "networkSecurityGroupName": "[format('{0}-NSG', substring (resourceGroup().name, 0, 5))]"
+      "virtualNetworkName": "[if(lessOrEquals(length(resourceGroup().name), 8), format('{0}-VNET', substring (resourceGroup().name, 0, length(resourceGroup().name))), format('{0}-VNET', substring (resourceGroup().name, 0, 8)))]",
+      "networkSecurityGroupName": "[if(lessOrEquals(length(resourceGroup().name), 8), format('{0}-NSG', substring (resourceGroup().name, 0, length(resourceGroup().name))), format('{0}-NSG', substring (resourceGroup().name, 0, 8)))]"
     },
     "resources": [
       {
