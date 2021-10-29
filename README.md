@@ -16,9 +16,7 @@ If you have any questions, contact martin.dobes@aparavi.com
 
 ## Architecture
 
-Folowing image explains the difference between the installation of an Agent and Aggregator and Collector. An Agent consists of both components: Aggregator and Collector
-
-<img src=https://github.com/aparaviemea/Installation/blob/main/images/overview.png>
+Folowing image explains the the architecture of the deployment ARM template
 
 <img src=https://github.com/aparaviemea/Installation/blob/main/images/apa-architecture.png>
 
