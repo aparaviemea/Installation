@@ -20,6 +20,8 @@ Folowing image explains the difference between the installation of an Agent and 
 
 <img src=https://github.com/aparaviemea/Installation/blob/main/images/overview.png>
 
+<img src=https://github.com/aparaviemea/Installation/blob/main/images/apa-architecture.png>
+
 # Installation 
 ### Operating System Support 
 
