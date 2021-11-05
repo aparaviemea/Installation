@@ -48,7 +48,7 @@ Aparavi software can access files systems on which the Aggregator-Collector or C
 
 ### Supported data sources include the following. 
 
-- File Systems3
+### File Systems
 - Windows file systems 
 - Linux file systems 
 - SMB file share protocols – 2.x and 3.x 
