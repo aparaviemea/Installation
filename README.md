@@ -81,8 +81,6 @@ The documentation files are in the section `Documentation`.
 
 - **ARM Template with 2 VMs based on Windows Server 2019** for Aparavi Aggregator and Collector
 
-- **ARM Template with 1 VM based in Linux** for one Aparavi Agent
-
-- **ARM Template with 2 VMs based on Linux** for Aparavi Aggregator and Collector
+- **ARM Template based on Linux and Docker Container ** for Aparavi Aggregator and Collector
 
 
