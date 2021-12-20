@@ -36,6 +36,11 @@ Folowing image explains the the architecture of the deployment ARM template
 
 <img src=https://github.com/aparaviemea/Installation/blob/main/images/apa-architecture.png>
 
+# Data Port Table
+The following table illustrates inbound and outbound direction as well as app to app flow of communication:
+
+<img src=https://github.com/aparaviemea/Installation/blob/main/images/DataPorts.png>
+
 # Installation 
 ### Operating System Support 
 
