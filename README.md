@@ -80,7 +80,6 @@ The documentation files are in the section `Documentation`.
 # ToDo List:
 
 - **ARM Template with 2 VMs based on Windows Server 2019** for Aparavi Aggregator and Collector
-
-- **ARM Template based on Linux and Docker Container ** for Aparavi Aggregator and Collector
+- **ARM Template based on Linux and Docker Container** for Aparavi Aggregator and Collector
 
 
