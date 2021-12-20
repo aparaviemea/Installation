@@ -41,6 +41,11 @@ The following table illustrates inbound and outbound direction as well as app to
 
 <img src=https://github.com/aparaviemea/Installation/blob/main/images/DataPorts.png>
 
+Platform	9455
+Collector	9645
+Aggregator	9545
+Aggregator-Collector	9745
+
 # Installation 
 ### Operating System Support 
 
